@@ -1,0 +1,151 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #cedaf8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* OTP Container */
+.otp-container {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 70%;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    
+}
+
+/* OTP Icon */
+.otp-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #6aecf1;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+}
+
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 22px;
+}
+
+/* Form Group - To align Username & WhatsApp Number */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left; /* Aligns text to the left */
+    width: 100%;
+    padding-left: 30px;
+}
+
+.form-group input {
+    width: 90%; /* Adjusted width for centering */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    text-align: center; /* Ensures text inside input is centered */
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #3b6ff5;
+    box-shadow: 0 0 5px rgba(59, 111, 245, 0.5);
+}
+
+/* OTP Button */
+.otp-btn {
+    width: 90%;
+    padding: 12px;
+    background-color: #3b6ff5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.otp-btn:hover {
+    background-color: #315ad6;
+}
+
+
+
+/* Ensure OTP input group stays centered */
+.otp-input-group {
+    display: flex;
+    justify-content: center;
+    gap: 8px;  /* Adjust spacing between boxes */
+    margin: 15px auto;
+    max-width: 260px; /* Ensures it doesn’t stretch too wide */
+}
+
+/* Ensure OTP inputs are evenly spaced */
+.otp-input {
+    width: 40px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s, transform 0.1s;
+}
+@media screen and (min-width: 1024px) {
+    .otp-container {
+        width: 25%;
+        max-width: 20%;
+    }
+}
+
+
+/* Focus effect */
+.otp-input:focus {
+    border-color: #3b6ff5;
+    transform: scale(1.05);
+}
+/* Shake Animation */
+.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    60% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
