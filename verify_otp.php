@@ -50,14 +50,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php echo isset($error) ? $error : ''; ?>
             </p>
             <form method="POST">
-                <div class="otp-input-group">
-                    <input type="text" maxlength="1" class="otp-input" name="otp[]" required>
-                    <input type="text" maxlength="1" class="otp-input" name="otp[]" required>
-                    <input type="text" maxlength="1" class="otp-input" name="otp[]" required>
-                    <input type="text" maxlength="1" class="otp-input" name="otp[]" required>
-                    <input type="text" maxlength="1" class="otp-input" name="otp[]" required>
-                    <input type="text" maxlength="1" class="otp-input" name="otp[]" required>
-                </div>
+            <div class="otp-input-group">
+    <input type="text" maxlength="1" class="otp-input" name="otp[]" required inputmode="numeric" pattern="[0-9]" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+    <input type="text" maxlength="1" class="otp-input" name="otp[]" required inputmode="numeric" pattern="[0-9]" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+    <input type="text" maxlength="1" class="otp-input" name="otp[]" required inputmode="numeric" pattern="[0-9]" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+    <input type="text" maxlength="1" class="otp-input" name="otp[]" required inputmode="numeric" pattern="[0-9]" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+    <input type="text" maxlength="1" class="otp-input" name="otp[]" required inputmode="numeric" pattern="[0-9]" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+    <input type="text" maxlength="1" class="otp-input" name="otp[]" required inputmode="numeric" pattern="[0-9]" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+</div>
+
                 <button type="submit" class="otp-btn">Verify OTP</button>
             </form>
         </div>

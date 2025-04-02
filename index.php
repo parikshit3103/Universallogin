@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <h2>Register</h2>
 
-        <?php if (isset($error)) echo "<p class='error-message show'>$error</p>"; ?>
+        <?php if (isset($error)) echo "<p style='color: red; font-weight: bold;'>$error</p>"; ?>
 
         <form method="POST">
             <div class="form-group">

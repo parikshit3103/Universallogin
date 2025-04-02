@@ -75,7 +75,7 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
-    text-align: center; /* Ensures text inside input is centered */
+    text-align: left; /* Ensures text inside input is centered */
     transition: all 0.3s ease;
 }
 
